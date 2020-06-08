@@ -1,0 +1,203 @@
+@font-face {
+        font-family:'goldstone';
+        src: url('f/goldstone.ttf')
+    }
+
+body
+{
+    background-image: url(p/unnamed.jpg);
+    background-repeat: repeat;
+    background-size: 30%;
+    background-color: rgb(252, 252, 252);
+  
+}
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar
+{
+    width: 100%;
+    height:70px;
+    overflow: hidden;
+    line-height: 70px;
+    background-image: url(p/barre1.jpg);
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-color: #c4c4c4;
+    border-bottom: 2px solid gray;
+    
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+  
+.logo
+{
+    width: 70px;
+    float: left;   
+}
+.menu
+{
+    float: right;  
+    
+}
+.menu li
+{
+    float: left;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+    font-family: 'goldstone';
+    text-transform: uppercase;
+    display: block;
+    
+}
+.menu li a
+{
+    color: #41413e;
+    text-decoration: none;
+}
+.menu li:hover
+{
+    background: #272010 ;
+}
+.menu li a:hover
+{
+  color: #8f8e78;  
+}
+
+.librarybooks
+{
+    background-color: rgba(218, 217, 214, 0.877);
+    width: 150px;
+    border-bottom:2px gray solid;
+    width: 1100px;
+    height: 100%;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   margin-left: 10%;
+   
+   
+}
+.Smenu
+{
+    shape-image-threshold: inherit;
+    padding-top: 1%;
+    text-shadow: gray;
+    padding-left: 1%;
+}
+.Smenu tr
+{
+    
+    padding-top: 3%;
+    text-shadow: gray;
+
+}
+.Smenu th a
+{
+    color: #75756b;
+    text-decoration: none;
+}
+.Smenu th
+{
+    text-align: center;
+    font-family: Freestyle Script;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+
+    
+
+}
+.Smenu th a:hover
+{
+  color: #190e11;  
+}
+.text
+{
+    font-family: High Tower Text Italic;
+    font-size: 13px;
+    color: #41413e;
+    text-align: justify;
+    padding: 1%;
+}    
+.Smenu td a
+{
+    color: #7e7e75;
+    text-decoration: none;
+    border-style: round gray 2px solid;
+}
+.Smenu td a:hover
+{
+    color: #ffffff;
+}
+
+
+.home
+{
+    background-color: rgba(218, 217, 214, 0.877);
+    border-bottom:2px gray solid;
+    width: 1100px;
+    height: 100%;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   margin-left: 10%;
+   
+}
+.carousel-inner img
+ {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+ }
+ .carousel-caption h3 
+ {
+    color: rgb(255, 255, 255) !important;
+    
+  }
+  @media (max-width: 600px)
+   {
+        .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */}
+    }
+.aboutus
+{
+    background-color: rgba(218, 217, 214, 0.877);
+    border-bottom:2px gray solid;
+    width: 1100px;
+    height: 970px;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   margin-left: 10%;
+}
+.icon
+{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-family: Montserrat, sans-serif;
+}
+.glory
+{
+    font-family: Montserrat, sans-serif;  
+    color:#41413e ;
+    text-align: justify;
+    font-size: 18px;     
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.hallaluja
+{
+    font-family: 'goldstone';
+    color:#30302a ;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}

@@ -1,0 +1,392 @@
+:root {
+    font-size: 20px;
+    font-family: 'goldstone';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  
+  
+  /*body {
+    background-image: url(dark.jpg);
+    background-repeat: repeat;
+    background-size: 30%;
+    background-color: rgb(252, 252, 252);
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }*/
+  
+  body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    z-index: 1;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+   
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-item:last-child {
+    margin-top: auto;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+  }
+  
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+  
+  .link-text {
+    display: none;
+    margin-left: 1rem;
+  }
+  
+  .nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+  
+  .fa-primary {
+    color: #a5d3ee;
+  }
+  
+  .fa-secondary {
+    color: #77b4d8;
+  }
+  
+  .fa-primary,
+  .fa-secondary {
+    transition: var(--transition-speed);
+  }
+  
+  .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+  }
+  
+  .logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+  }
+  
+  .logo-text
+  {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+  }
+  
+  .navbar:hover .logo svg {
+    transform: rotate(-180deg);
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg
+    {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+  }
+  
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
+  }
+
+  .logo
+  {
+      width: 70px;
+      float: left;   
+  }
+  .menu
+  {
+      float: right;  
+      
+  }
+  .menu li
+  {
+      float: left;
+      width: 120px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      list-style: none;
+      font-family:goldstone;
+      text-transform: uppercase;
+      display: block;
+      
+  }
+  .menu li a
+  {
+      color: #41413e;
+      text-decoration: none;
+  }
+  .menu li:hover
+  {
+      background: #ece8df ;
+  }
+  .menu li a:hover
+  {
+    color: #8f8e78;  
+  }
+  
+  /*.librarybooks
+  {
+      background-color: rgba(218, 217, 214, 0.877);
+      width: 150px;
+      border-bottom:2px gray solid;
+      width: 1200px;
+      height: 100%;
+     margin-top: 10%;
+     margin-bottom: 30%;
+     margin-left: 1%; 
+  }*/ 
+  .Smenu
+  {
+      shape-image-threshold: inherit;
+      padding-top: 1%;
+      text-shadow: gray;
+      padding-left: 1%;
+  }
+  .Smenu tr
+  {
+      
+      padding-top: 3%;
+      text-shadow: gray;
+  
+  }
+  .Smenu th a
+  {
+      color: #75756b;
+      text-decoration: none;
+  }
+  .Smenu th
+  {
+      text-align: center;
+      font-family: Freestyle Script;
+      text-transform: uppercase;
+      
+  
+      
+  
+  }
+  .Smenu th a:hover
+  {
+    color: #190e11;  
+  }
+  .text
+  {
+      font-family: High Tower Text Italic;
+      font-size: 13px;
+      color: #41413e;
+      text-align: justify;
+      padding: 1%;
+  }    
+  .Smenu td a
+  {
+      color: #7e7e75;
+      text-decoration: none;
+      border-image: fill;
+  }
+  .Smenu td a:hover
+  {
+      color: #ffffff;
+  }
+  
+  
+  /*.home
+  {
+      background-color: rgba(218, 217, 214, 0.877);
+      border-bottom:2px gray solid;
+      width: 1200px;
+      height: 100%;
+     margin-top: 1%;
+     margin-bottom: 1%;
+     margin-left: 17%;
+  }
+  .carousel-inner img
+   {
+      -webkit-filter: grayscale(50%);
+      filter: grayscale(50%); /* make all photos black and white 
+      width: 100%;  Set width to 100% 
+      margin: auto;
+   }
+   .carousel-caption h3 
+   {
+      color: rgb(255, 255, 255) !important;
+      
+    }
+    @media (max-width: 600px)
+     {
+          .carousel-caption {
+          display: none; /* Hide the carousel text when the screen is less than 600 pixels wide }
+      }
+  .aboutus
+  {
+      background-color: rgba(218, 217, 214, 0.877);
+      border-bottom:2px gray solid;
+      width: 1000px;
+      height:650px;
+      margin-left: 17%;
+
+    
+  }
+  
+  .h1
+  {
+      text-align: center;
+  }*/
+  
+  .dark
+  {
+    background-image: url(unnameddark.jpg);
+
+  }
+  .light
+  {
+    background-image: url(unnamed.jpg);
+  }
+  .solar
+  {
+    background-image: url(unnamedsoleil.jpg);
+  }
