@@ -1,3 +1,8 @@
+@font-face
+{
+    font-family:'goldstone';
+    src: url('f/goldstone.ttf')
+}
 body
 {
     background-image: url(unnamed.jpg);
@@ -58,7 +63,7 @@ body::-webkit-scrollbar {
     line-height: 70px;
     text-align: center;
     list-style: none;
-    font-family:goldstone;
+    font-family:'goldstone';
     text-transform: uppercase;
     display: block;
     
@@ -201,7 +206,7 @@ body::-webkit-scrollbar {
 }
 .hallaluja
 {
-    font-family: goldstone;
+    font-family: 'goldstone';
     color:#30302a ;
     text-align: center;
     font-size: 40px;
